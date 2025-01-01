@@ -1,0 +1,230 @@
+  /* Define CSS variables in the :root */
+  :root {
+    --primary-color: #FF2C9C;
+    --secondary-color: #103759;
+    --text-color: #333;
+    --background-color: #f9f9f9;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-radius: 1rem;
+    position: static;
+   
+}
+
+nav .logo img {
+    width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+nav .btn {
+    padding: 0.5rem 1.5rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav .btn:hover {
+    background-color: #e02285;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    gap: 2rem;
+}
+
+section div {
+    flex: 1;
+    min-width: 300px;
+    margin-left: 120px;
+}
+
+section h1 {
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+section p {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+section button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+section button:hover {
+    background-color: #e02285;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        width: 100;
+        background-color: #2d689c;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+       
+    }
+    nav ul li  {
+        width: 100%;
+        background-color: #80add4;
+        
+    }
+    ul {
+        display: flex; /* Show menu by default on larger screens */
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+    }
+
+    .icon {
+        display: non /* Hide the icon on larger screens */
+    }
+
+    section {
+        flex-direction: column;
+        font-size:small;
+    }
+    
+
+    section div {
+        text-align: center;
+    }
+
+    section h1 {
+        font-size: 2rem;
+    }
+    icon{
+        display: block;
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+ 
+}
+
+.middle{
+    width: auto;
+    height: 10vh;
+    background-color: var(--primary-color);
+}
+.he{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 2rem 1rem;
+    gap: 1rem; */
+    margin-left: 120px;
+    margin-right: 80px;
+
+}
+.form{
+    width: 500px;
+    height: 400px;
+    background-color: #bfd1e0;
+    align-content: center;
+    align-items: center;
+    padding-left: 4rem;
+
+}
+.inp{
+    width: auto;
+}
+.form-container input[type="text"]{
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #aaa;
+    border-radius: 25px;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+    background-color: #fafafa;
+  }
+  .form-container input[type="text"]:focus {
+    border-color: #ff007f;
+  }
+  .btnn{
+    width: 80%;
+    border-radius:25px ;
+    border-color: #ff007f;
+    color: white;
+    cursor: pointer;
+    background-color: #FF2C9C;
+    padding: 10px 20px;
+
+  }
+

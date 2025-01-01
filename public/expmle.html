@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Design</title>
+  <style>
+    body{
+
+
+        display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+     
+    }
+  .form-container{
+     width: 400px;
+     background-color: white;
+     box-shadow:  0 24px 6px rgba(0, 0, 0, 0.1);
+     padding: 30px;
+  }
+  .form-container input[type="text"]{
+    width: 100%;
+      background-color: #f4f4f4;
+      border-radius: 30px;
+      color:  #ca2eb8;
+      padding: 10px;
+      outline: none;
+      border: 1px solid #ca2eb8;
+
+  }
+  .form-container input[type="phone"]{
+    width: 100%;
+      background-color: #f4f4f4;
+      border-radius: 30px;
+      color:  #ca2eb8;
+      padding: 10px;
+      outline: none;
+      border: 1px solid #ca2eb8;
+
+  }
+  .form-container input[type="email"]{
+    width: 100%;
+      background-color: #f4f4f4;
+      border-radius: 30px;
+      color:  #ca2eb8;
+      padding: 10px;
+      outline: none;
+      border: 1px solid #ca2eb8;
+
+  }
+
+  
+   .form-container{
+    font-size: larger;
+    color: #ca2eb8;
+    margin-bottom: 10px;
+   }
+   button{
+    width:100% ;
+    background-color: #ca2eb8;
+    color: white;
+    font-size: larger;
+    border-radius: 30px;
+    outline: none;
+    border-color: #ca2eb8;
+    margin-top: 10px;
+    padding: 7px;
+   }
+   button:hover{
+    background-color: #da89d0;
+    color: rgb(45, 44, 44);
+    cursor: pointer;
+   }
+
+  </style>
+ 
+ <body>
+    <div class="form-container">
+        <form action="https://formspree.io/f/mvgoenkd" method="post">
+            <label for="">frist name</label>
+            <input type="text" name="fristname" placeholder="frist name" id="frist">
+            <br>
+            <label for="">last name</label>
+            <input type="text"  name="lastname" placeholder="last name" id="frist">
+            <br>
+            <label for="">email</label>
+            <input type="email"  name="email" placeholder="email" id="frist">
+            <br>
+            <label for="">phone</label>
+            <input type="phone"  name="phone" placeholder="phone" id="frist">
+            <br>
+            <button type="submit">Register Now</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
